@@ -440,9 +440,10 @@ const TestProduct = ({ isUser }) => {
                                                       <p>{e.description}</p>
                                                     </>
                                                   )}
-                                                  <div className="row">
-                                                  {console.log(SubOption)}
-
+                                                   {console.log(SubOption)}
+                                                  {SubOption ?
+                                                    e.id == SubOption.id ? 
+                                                    <div className="row">
                                                     {SubOption ? (
                                                       <div className="row">
                                                         {SubOption.childrens.map(
@@ -793,6 +794,8 @@ const TestProduct = ({ isUser }) => {
                                                       </div>
                                                     ) : null}
                                                   </div>
+                                                   : null
+                                                   : null}
                                                 </div>
                                               </div>
                                             </div>
